@@ -1,0 +1,102 @@
+/*
+=============
+Imports
+=============
+*/
+
+//@import "toggleSwitch";
+//@import "header";
+//@import "nav";
+//@import "modal";
+//@import "btn";
+//@import "store";
+//@import "localhost";
+//@import "slideshow";
+
+/*
+============
+Variables
+============
+*/
+
+//Fonts
+@a: Dancing Script;
+@b: Indie Flower;
+@c: Lacque;
+@d: Shadows Into Light;
+@e: Sigmar One;
+@f: Simonetta;
+@g: Sriracha;
+
+//Body Defaults
+.bodyDefault{
+  font-family: sans;
+  color: white;
+  background: #img[wallpaper];
+}
+
+//a and li Defaults
+.liaDefault{
+  li, a{
+    text-decoration: none;
+    list-style-type: none;
+  }
+}
+
+.blueA{
+  .liaDefault;
+  a{
+    color: #colors[blue];
+    font-variant: small-caps;
+    font-weight: bold;
+  }
+  a:hover{
+    color: #colors[red];
+  }
+  a:active{
+    color: #colors[black];
+  }
+}
+
+//Footer Defaults
+.footerDefault{
+  footer{
+    clear: both;
+    a{
+      border: none;
+      color: #colors[blue];
+    }
+    a:hover{
+      color: #colors[red];
+      border: none;
+      background: none;
+    }
+  }
+}
+
+//Color Defaults
+#colors(){
+  darkGreen: #089626;
+  lightGreen: #03ff00;
+  black: #000000;
+  blue: #008ffe;
+  white: #ffffff;
+  lightGrey: #d8d8d8;
+  red: #ff002b;
+  darkYellow: #d6e800;
+}
+
+//Image Path Dafaults
+@images: "../img/";
+#img(){
+  //space: black url("@{images}/space.jpg") no-repeat fixed center;
+  wallpaper: black url("@{images}/wallpaper.png") no-repeat fixed center;
+}
+
+//Border Defaults
+#border(){
+  gs2px: 2px solid #colors[darkGreen];
+  bs2px: 2px solid #colors[black];
+  bls2px: 2px solid #colors[blue];
+  rs2px: 2px solid #colors[red];
+}
